@@ -52,7 +52,7 @@ public class PostParseProcessor implements Tool {
 			
             //System.out.println(values.length + " 0 : " + values[0] + " 1: " + values[1]);
 			Integer sentId = Integer.parseInt(values[0]);
-			if(values.length > 1){
+			if(values.length > 1 && values[1].length() < 1000){
 				String parseString = values[1];	
 				
 				// we don't allow | since we treat that as a special character
