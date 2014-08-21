@@ -1,0 +1,3 @@
+#!/bin/bash
+hadoop jar /mnt/b100/d0/hadoop/hadoop-0.20.2-cdh3u6/contrib/streaming/hadoop-streaming-0.20.2-cdh3u6.jar -D mapred.reduce.tasks=0 -D mapred.map.tasks=100 -D mapred.task.timeout=3600000 -archives 'hdfs://b100:20080/user/aman/bllip-parser.jar' -input /user/aman/nw_fm_parserinput -output /user/aman/nw_fm_parseroutput -file cjmapper.py -mapper "python cjmapper.py"
+#hadoop jar /path/to/hadoop-streaming-1.0.2.jar -D mapred.reduce.tasks=0 -D mapred.map.tasks=x -D mapred.task.timeout=LONGTIMEOUT -archives /hdfs/path/to/bllip-parser.jar' -input /hdfs/path/to/tokenized/sentences -output /hdfs/path/to/parsed/output -file cjmapper.py -mapper "python cjmapper.py"
