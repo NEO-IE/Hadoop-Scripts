@@ -52,7 +52,7 @@ public class PostParseProcessor implements Tool {
 			
             //System.out.println(values.length + " 0 : " + values[0] + " 1: " + values[1]);
 			Integer sentId = Integer.parseInt(values[0]);
-			if(values.length > 1 && values[1].length() < 1000){
+			if(values.length > 1){
 				String parseString = values[1];	
 				
 				// we don't allow | since we treat that as a special character
@@ -121,7 +121,7 @@ public class PostParseProcessor implements Tool {
 	public int run(String[] args) throws Exception {
 		
 		Configuration conf = getConf();
-        long timeOut = 1800000;
+        long timeOut = 0;
         conf.setLong("mapred.task.timeout", timeOut);
 		JobConf job = new JobConf(conf,PostParseProcessor.class);
 		

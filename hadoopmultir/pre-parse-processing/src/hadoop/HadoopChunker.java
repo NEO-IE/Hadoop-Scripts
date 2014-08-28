@@ -55,7 +55,7 @@ public class HadoopChunker implements Tool{
 				throws IOException {
             
 			String line = value.toString();
-			//System.out.println(line);
+			System.out.println(line);
             String[] values = line.split("\t");
 			Integer sentId = Integer.parseInt(values[0]);
 			String[] tokens = values[1].split("\\s+");
