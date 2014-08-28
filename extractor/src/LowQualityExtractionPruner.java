@@ -3,6 +3,7 @@ import java.io.IOException;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.FileInputFormat;
 import org.apache.hadoop.mapred.FileOutputFormat;
@@ -27,7 +28,7 @@ import org.apache.hadoop.util.ToolRunner;
  */
 public class LowQualityExtractionPruner implements Tool {
 
-	public static final int THRESHOLD = 1500000;
+	public static final Double THRESHOLD = 10000000.0;
 	public static final int SCORE_INDEX = 8;
 	Configuration conf;
 
@@ -35,19 +36,39 @@ public class LowQualityExtractionPruner implements Tool {
 		conf = new Configuration();
 		setConf(conf);
 	}
-	
+
 	public static class ExtractionMapper extends MapReduceBase implements
-			Mapper<LongWritable, Text, LongWritable, Text> {
+			Mapper<LongWritable, Text, NullWritable, Text> {
 
 		@Override
 		public void map(LongWritable key, Text line,
-				OutputCollector<LongWritable, Text> collector, Reporter arg3)
+				OutputCollector<NullWritable, Text> collector, Reporter arg3)
 				throws IOException {
 			String lineStr = line.toString();
 			String vals[] = lineStr.split("\t");
-			Integer score = Integer.parseInt(vals[SCORE_INDEX]);
+			Double score = Double.parseDouble(vals[SCORE_INDEX]);
 			if (score > THRESHOLD) {
-				collector.collect(key, line);
+				collector.collect(NullWritable.get(), line);
+			}
+		}
+	}
+
+	public static class RelationOnlyExtractionMapper extends MapReduceBase implements
+			Mapper<LongWritable, Text, NullWritable, Text> {
+
+		@Override
+		public void map(LongWritable key, Text line,
+				OutputCollector<NullWritable, Text> collector, Reporter arg3)
+				throws IOException {
+			String lineStr = line.toString();
+			String vals[] = lineStr.split("\t");
+			Double score = Double.parseDouble(vals[SCORE_INDEX]);
+			StringBuilder op = new StringBuilder();
+			for(int i  = 0; i <= SCORE_INDEX; i++) {
+				op.append(vals[i] + "\t");
+			}
+			if (score > THRESHOLD) {
+				collector.collect(NullWritable.get(), new Text(op.toString()));
 			}
 		}
 	}
@@ -64,8 +85,8 @@ public class LowQualityExtractionPruner implements Tool {
 
 	@Override
 	public int run(String[] args) throws Exception {
-		if (args.length != 2) {
-			System.err.println("Usage : <input> <score> <output>");
+		if (args.length != 3) {
+			System.err.println("Usage : <input> <output> <maps>");
 			return -1;
 		}
 		JobConf job = new JobConf(getConf(), LowQualityExtractionPruner.class);
@@ -74,14 +95,13 @@ public class LowQualityExtractionPruner implements Tool {
 
 		job.setJobName("extraction-pruner");
 		job.setInputFormat(TextInputFormat.class);
-		job.setMapOutputKeyClass(LongWritable.class);
+
+		job.setMapOutputKeyClass(NullWritable.class);
 		job.setMapOutputValueClass(Text.class);
-		job.setOutputKeyClass(LongWritable.class);
 		job.setOutputValueClass(Text.class);
 		job.setOutputFormat(TextOutputFormat.class);
-		job.setMapperClass(ExtractionMapper.class);
+		job.setMapperClass(RelationOnlyExtractionMapper.class);
 
-		job.setMemoryForReduceTask(8144);
 		job.set("mapred.child.java.opts", "-Xmx6g");
 		FileInputFormat.setInputPaths(job, in);
 		FileOutputFormat.setOutputPath(job, out);
@@ -91,9 +111,9 @@ public class LowQualityExtractionPruner implements Tool {
 		JobClient.runJob(job);
 		return 0;
 	}
-	
+
 	public static void main(String args[]) throws Exception {
 		ToolRunner.run(new LowQualityExtractionPruner(), args);
-		
+
 	}
 }

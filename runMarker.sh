@@ -1,1 +1,2 @@
-hadoop jar marker.jar marker.HadoopCountryMarker -libjars opennlplib/commons-io-1.3.2.jar:/mnt/b100/d0/hadoop/hadoop-0.20.2-cdh3u6/hadoop-core-0.20.2-cdh3u6.jar:common-scala_2.10-1.1.2.jar:opennlplib/org.scala-lang.scala-actors_2.11.1.v20140519-130118-1e1defd99c.jar:opennlplib/commons-lang-2.6.jar -fs file:/// -jt testinput testoutput 1
+hadoop fs -rmr testoutput
+hadoop jar marker.jar marker.HadoopCountryMarker -libjars /mnt/b100/d0/hadoop/hadoop-0.20.2-cdh3u6/hadoop-core-0.20.2-cdh3u6.jar,/mnt/a99/d0/aman/sgmtp/opennlplib/commons-lang-2.6.jar marker_input.txt marker_output 156

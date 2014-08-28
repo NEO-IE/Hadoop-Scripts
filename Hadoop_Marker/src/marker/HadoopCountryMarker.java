@@ -6,9 +6,8 @@ package marker;
  *
  */
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -17,6 +16,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang.WordUtils;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -46,24 +46,38 @@ public class HadoopCountryMarker implements Tool {
 	static HashSet<String> countryList;
 	HashSet<String> popularAbbrSet;
 
-	public HadoopCountryMarker() {
-		conf = new Configuration();
-		setConf(conf);
+	static {
+		String countriesFile = "hdfs://b100:20080/user/aman/countries_file";
+		Path pt = new Path(countriesFile);
+		FileSystem fs;
+		try {
+			fs = FileSystem.get(new Configuration());
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					fs.open(pt)));
+			String countryRecord = null;
+			freeBaseMapping = new HashMap<String, String>();
+			while ((countryRecord = br.readLine()) != null) {
+				String vars[] = countryRecord.split("\t");
+				String countryName = vars[1].toLowerCase();
+				String countryId = vars[0];
+				// System.out.println(countryName);
+				freeBaseMapping.put(countryName, countryId);
+			}
+			countryList = new HashSet<String>(freeBaseMapping.keySet());
+			// System.out.println(countryList);
+			// "US/USA gets special treatment as always
+			br.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
-	public HadoopCountryMarker(String countriesFile) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(new File(
-				countriesFile)));
-		String countryName = null;
-		freeBaseMapping = new HashMap<String, String>();
-		while ((countryName = br.readLine()) != null) {
-			String vars[] = countryName.split("\t");
-			String oriName = vars[0].toLowerCase();
-			freeBaseMapping.put(oriName, vars[1]);
-		}
-		countryList = new HashSet<String>(freeBaseMapping.keySet());
-		// "US/USA gets special treatment as always
-		br.close();
+	public HadoopCountryMarker() throws IOException {
+		conf = new Configuration();
+		setConf(conf);
+
 	}
 
 	/*
@@ -90,6 +104,7 @@ public class HadoopCountryMarker implements Tool {
 			String tokenString = value.toString();
 
 			String[] tokens = tokenString.split("\\s+");
+			System.out.println(tokens);
 			Matcher m = null;
 			for (int i = 0; i < tokens.length; i++) {
 				m = p.matcher(tokens[i]);
@@ -97,7 +112,7 @@ public class HadoopCountryMarker implements Tool {
 					hasNumber = true;
 					markings.add(new Marking(i, i + 1, m.group(), m.group(), 1,
 							Marking.NUMBER));
-				} else if (countryList.contains(tokens[i])) { // test for
+				} else if (countryList.contains(tokens[i].toLowerCase())) { // test for
 																// country
 					hasCountry = true;
 					String freeBaseId = freeBaseMapping.get(tokens[i]
