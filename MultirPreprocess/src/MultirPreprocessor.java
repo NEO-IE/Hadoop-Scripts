@@ -13,12 +13,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 
-import marker.HadoopCountryMarker;
-import marker.HadoopCountryMarker.Map;
-
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.FileInputFormat;
 import org.apache.hadoop.mapred.FileOutputFormat;
@@ -30,7 +26,6 @@ import org.apache.hadoop.mapred.Mapper;
 import org.apache.hadoop.mapred.OutputCollector;
 import org.apache.hadoop.mapred.Reducer;
 import org.apache.hadoop.mapred.Reporter;
-import org.apache.hadoop.mapred.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
@@ -53,6 +48,7 @@ public class MultirPreprocessor implements Tool {
 		@Override
 		public void map(Text docName, Text sentence, OutputCollector<Text, Text> collector, Reporter arg3)
 				throws IOException {
+			System.out.println("Mapping " + docName + " to " + sentence);
 			collector.collect(docName, sentence);
 		}
 	}
@@ -61,7 +57,7 @@ public class MultirPreprocessor implements Tool {
 		private final static Properties props = new Properties();
 
 		static {
-			props.put("annotators", "pos,lemma,ner");
+			props.put("annotators", "tokenize, ssplit, pos, lemma");
 			props.put("sutime.binders", "0");
 		}
 
@@ -73,16 +69,16 @@ public class MultirPreprocessor implements Tool {
 			/**
 			 * collect all the sentences that are in the document
 			 */
-			
-			String docString = "";
+			System.out.println("Reducing from doc called: " + docName);
+			StringBuffer docString = new StringBuffer();
 			int numSentences = 0;
 			while (sentences.hasNext()) {
 				Text sentence = sentences.next();
-				docString += (sentence.toString() + "\n");
+				docString.append(sentence.toString());
 				numSentences += 1;
 			}
 			System.out.println("Sentences: " + numSentences);
-			ArrayList<String> result = preprocess(docString);
+			ArrayList<String> result = preprocess(docString.toString());
 			for(String sent: result) {
 				collector.collect(docName, new Text(sent));
 			}
@@ -151,26 +147,32 @@ public class MultirPreprocessor implements Tool {
 	public int run(String[] args) throws Exception {
 
 		Configuration conf = getConf();
-		JobConf job = new JobConf(conf, HadoopCountryMarker.class);
+		JobConf job = new JobConf(conf, MultirPreprocessor.class);
 
 		// process command line options
 		Path in = new Path(args[0]);
 		Path out = new Path(args[1]);
 
-		job.setJobName("hadoop-country-marker");
+		job.setJobName("multir-preprocessing-code");
 		job.setInputFormat(KeyValueTextInputFormat.class);
+		
+		//set mapper output
 		job.setMapOutputKeyClass(Text.class);
 		job.setMapOutputValueClass(Text.class);
-		job.setOutputKeyClass(LongWritable.class);
+		
+		//set job output class
+		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(Text.class);
-		job.setOutputFormat(TextOutputFormat.class);
+
 		job.setMapperClass(Map.class);
+		job.setReducerClass(Reduce.class);
+		
 
 		job.set("mapred.child.java.opts", "-Xmx6g");
 		FileInputFormat.setInputPaths(job, in);
 		FileOutputFormat.setOutputPath(job, out);
 		job.setNumMapTasks(Integer.parseInt(args[2]));
-		job.setNumReduceTasks(0);
+		job.setNumReduceTasks(Integer.parseInt(args[3]));
 
 		JobClient.runJob(job);
 		return 0;
@@ -184,6 +186,6 @@ public class MultirPreprocessor implements Tool {
 	 */
 
 	public static void main(String[] args) throws Exception {
-		int res = ToolRunner.run(new HadoopCountryMarker(), args);
+		int res = ToolRunner.run(new MultirPreprocessor(), args);
 	}
 }
