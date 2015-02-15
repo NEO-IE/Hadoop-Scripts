@@ -41,9 +41,9 @@ echo "Copying file to HDFS"
 hadoop fs -copyFromLocal $PREPARSEINPUT $PREPARSEINPUT
 PREPARSEOUTPUT="$FLATFILE"_PPOUT
 PREPARSE_MAPPER_COUNT=1
-PREPARSE_REDUCER=1
+PREPARSE_REDUCER_COUNT=1
 echo "Spawing the job"
-bash runpre.sh  $PREPARSEINPUT $PREPARSEOUTPUT $PREPARSE_MAPPER $PREPARSE_REDUCER
+bash runpre.sh  $PREPARSEINPUT $PREPARSEOUTPUT $PREPARSE_MAPPER_COUNT $PREPARSE_REDUCER_COUNT
 echo "Copying results to disk, cleaning HDFS"
 hadoop fs -rmr $PREPARSEINPUT
 hadoop fs -getmerge $PREPARSEOUTPUT $PREPARSEOUTPUT
@@ -73,3 +73,6 @@ echo "finished"
 hadoop fs -getmerge $DEPPARSEOUT $DEPPARSEOUT
 hadoop fs -rmr $DEPPARSEOUT
 hadoop fs -rmr $PARSEOUT
+
+
+
