@@ -1,5 +1,10 @@
 #the multir preprocessing pipeline
 FLATFILE=$1 #the initial flatfile
+####################################################
+#Define the number of mappers/reducers for different
+#steps of the pipeline
+
+####################################################
 
 echo "Processing $FLATFILE"
 
@@ -60,7 +65,7 @@ cut -f 1,4 $PREPARSEOUTPUT > $PARSEINPUT
 hadoop fs -copyFromLocal $PARSEINPUT $PARSEINPUT
 bash hadoopmultir/parsing/run.sh $PARSEINPUT $PARSEOUT
 echo "Parsing complete, copying the results"
-hadoop fs -rmr $PARSEINPUT
+#hadoop fs -rmr $PARSEINPUT WILL BE USED FOR MARKER, DND
 hadoop fs -getmerge $PARSEOUT $PARSEOUT
 
 echo -e "\n\n######################"
@@ -75,4 +80,59 @@ hadoop fs -rmr $DEPPARSEOUT
 hadoop fs -rmr $PARSEOUT
 
 
+echo -e "\n\n######################"
+echo "Step 6: Run chunker"
+echo -e "######################\n\n"
+CHUNKERINFILE="$FLATFILE"CHUNKIN
+CHUNKEROUTFILE="$FLATFILE"CHUNKOUT
+CHUNKERMAPPER_COUNT=1
 
+echo "Preparing input file to be fed to chunker"
+join $PREPARSEINPUT $PREPARSEOUTPUT -t $'\t'|cut -f1,3,4,7 > $CHUNKERINFILE
+echo "Copying the input file to HDFS"
+hadoop fs -copyFromLocal $CHUNKERINFILE $CHUNKERINFILE
+echo "Spawning the chunker"
+bash runChunker.sh $CHUNKERINFILE $CHUNKEROUTFILE $CHUNKERMAPPER_COUNT
+echo "Chunking over, cleaning up, copying files from HDFS"
+hadoop fs -rmr $CHUNKERINFILE
+hadoop fs -getmerge $CHUNKEROUTFILE $CHUNKEROUTFILE
+
+echo -e "\n\n######################"
+echo "Step 7: Run (country) Marker (make sure you apply your correct marker for this step)"
+echo -e "######################\n\n"
+MARKER_INFILE=$PARSEINPUT
+MARKER_OUTFILE=$FLATFILE"MARKEROUT"
+MARKER_MAPPER_COUNT=1
+echo "Spawning Marker"
+bash runMarker.sh $MARKER_INFILE $MARKER_OUTFILE $MARKER_MAPPER_COUNT
+hadoop fs -getmerge $MARKER_OUTFILE $MARKER_OUTFILE
+echo "Marking over, getting data back to the disk"
+
+echo -e "\n\n######################"
+echo "Step 8: Combine all the results"
+echo -e "######################\n\n"
+COMB_INCORRECT_ORDER="$FLATFILE"MERGE
+COMB_CORRECT_ORDER="$FLATFILE"RES
+echo "Sorting preparseoutput"
+sort -nk1 $PREPARSEOUTPUT -o $PREPARSEOUTPUT
+echo "Sorting chunkeroutput"
+sort -nk1 $CHUNKEROUTFILE -o $CHUNKEROUTFILE
+echo "Sorting marker output"
+sort -nk1 $MARKER_OUTFILE -o $MARKER_OUTFILE
+echo "Sorting dependency parse output"
+sort -nk1 $DEPPARSEOUT -o $DEPPARSEOUT
+
+
+
+join $PREPARSEINPUT $PREPARSEOUTPUT -t $'\t'|cut -f1,2,4-|join - $DEPPARSEOUT -t$'\t'|join - $CHUNKEROUTFILE -t $'\t'|join - $MARKER_OUTFILE -t $'\t' > $COMB_INCORRECT_ORDER
+awk -F $'\t' 'BEGIN {OFS = FS} {print $1,$2,$8,$5,$4,$9,$11,$12,$7,$3,$6,$10}' $COMB_INCORRECT_ORDER > $COMB_CORRECT_ORDER
+rm $COMB_INCORRECT_ORDER
+echo "Finished!"
+echo "Removing files"
+rm $PREPARSEOUTPUT
+rm $PREPARSEINPUT
+rm $CHUNKEROUTFILE
+rm $MARKER_OUTFILE
+rm $DEPPARSEOUT
+
+echo "Result written to: $COMB_CORRECT_ORDER"
