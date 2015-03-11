@@ -1,0 +1,2 @@
+1	(S1 (S (NP (DT This) (NN sentence)) (VP (VP (AUX has) (NP (NNP India) (CC and) (CD 10))) (CC and) (VP (MD should) (VP (AUX be) (VP (VBN dumped.)))))))
+2	(S1 (S (NP (DT This) (NN sentence)) (VP (VP (AUX has) (ADVP (RB just)) (NP (NNP india))) (CC and) (VP (MD should) (RB not) (VP (AUX be) (VP (VBN dumped.)))))))

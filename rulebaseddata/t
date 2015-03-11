@@ -1,0 +1,10 @@
+206
+Doc1
+1:5 6:8 9:12 13:19 20:24 25:31 32:34 35:44 45:51 52:57 58:67 68:73 74:75 76:82 83:85 86:91 92:94 95:101 102:106 107:110 111:120 121:124 125:128 129:136 137:140 141:144 145:149 150:156 157:162 163:167 167:168
+31695 31863
+This is the fourth time Uganda is recording single digit inflation after a period of about 20 months when the inflation was 9.4 percent for the year ending April 2008.
+DT VBZ DT JJ NN NNP VBZ VBG JJ NN NN IN DT NN IN RB CD NNS WRB DT NN VBD CD NN IN DT NN VBG NNP CD .
+O O O ORDINAL O LOCATION O O O O O O O O O DURATION DURATION NUMBER O O O O PERCENT PERCENT O DATE DATE O DATE DATE O
+this be the fourth time Uganda be record single digit inflation after a period of about 20 month when the inflation be 9.4 percent for the year end April 2008 .
+5 nsubj 1|5 cop 2|5 det 3|5 amod 4|0 root 5|8 nsubj 6|8 aux 7|5 rcmod 8|11 amod 9|11 amod 10|8 dobj 11|8 prep 12|14 det 13|12 pobj 14|14 prep 15|17 quantmod 16|18 num 17|15 pobj 18|24 advmod 19|21 det 20|24 nsubj 21|24 cop 22|24 num 23|14 rcmod 24|24 prep 25|27 det 26|25 pobj 27|27 partmod 28|28 tmod 29|29 num 30
+B-NP B-VP B-NP I-NP I-NP B-NP B-VP I-VP B-NP I-NP I-NP B-PP B-NP I-NP B-PP B-NP I-NP I-NP B-ADVP B-NP I-NP B-VP B-NP I-NP B-PP B-NP I-NP B-VP B-NP I-NP O

@@ -1,0 +1,206 @@
+1	1 2 3.71 3.71 1.0 6 7 9.62 9.62 1.0 13 14 318 318 1.0 18 19 US /m/09c7w0 1.0 	1 2 /neo/number 3.71 6 7 /neo/number 9.62 13 14 /neo/number 318 18 19 /location/country /m/09c7w0 
+2	6 7 US /m/09c7w0 1.0 8 9 2,959,064 2,959,064 1.0 12 13 7,663,941 7,663,941 1.0 	6 7 /location/country /m/09c7w0 8 9 /neo/number 2,959,064 12 13 /neo/number 7,663,941 
+3	1 2 US /m/09c7w0 1.0 9 10 3.5 3.5 1.0 24 25 Russia /m/06bnz 1.0 26 27 Canada /m/0d060g 1.0 	1 2 /location/country /m/09c7w0 9 10 /neo/number 3.5 24 25 /location/country /m/06bnz 26 27 /location/country /m/0d060g 
+4	0 1 US /m/09c7w0 1.0 4 5 3,794,083 3,794,083 1.0 13 14 9,826,630 9,826,630 1.0 	0 1 /location/country /m/09c7w0 4 5 /neo/number 3,794,083 13 14 /neo/number 9,826,630 
+5	5 6 9.6 9.6 1.0 15 16 China /m/0d05w3 1.0 25 26 Russia /m/06bnz 1.0 27 28 Canada /m/0d060g 1.0 34 35 US /m/09c7w0 1.0 	5 6 /neo/number 9.6 15 16 /location/country /m/0d05w3 25 26 /location/country /m/06bnz 27 28 /location/country /m/0d060g 34 35 /location/country /m/09c7w0 
+6	7 8 China /m/0d05w3 1.0 12 13 9327489.90 9327489.90 1.0 14 15 2011 2011 1.0 	7 8 /location/country /m/0d05w3 12 13 /neo/number 9327489.90 14 15 /neo/number 2011 
+7	4 5 China /m/0d05w3 1.0 6 7 36926 36926 1.0 13 14 India /m/03rk0 1.0 15 16 11823 11823 1.0 	4 5 /location/country /m/0d05w3 6 7 /neo/number 36926 13 14 /location/country /m/03rk0 15 16 /neo/number 11823 
+8	0 1 Pakistan /m/05sb1 1.0 5 6 796,095 796,095 1.0 8 9 307,374 307,374 1.0 21 22 France /m/0f8l9c 1.0 	0 1 /location/country /m/05sb1 5 6 /neo/number 796,095 8 9 /neo/number 307,374 21 22 /location/country /m/0f8l9c 
+9	10 11 Pakistan /m/05sb1 1.0 12 13 770,880 770,880 1.0 15 16 2011 2011 1.0 	10 11 /location/country /m/05sb1 12 13 /neo/number 770,880 15 16 /neo/number 2011 
+10	0 1 Tunisia /m/07fj_ 1.0 5 6 163,610 163,610 1.0 11 12 8,250 8,250 1.0 	0 1 /location/country /m/07fj_ 5 6 /neo/number 163,610 11 12 /neo/number 8,250 
+11	7 8 Italian /m/03rjj 1.0 32 33 44 44 1.0 35 36 110 110 1.0 43 44 842 842 1.0 	7 8 /location/country /m/03rjj 32 33 /neo/number 44 35 36 /neo/number 110 43 44 /neo/number 842 
+12	1 2 17,075,400 17,075,400 1.0 5 6 6,592,800 6,592,800 1.0 10 11 Russia /m/06bnz 1.0 	1 2 /neo/number 17,075,400 5 6 /neo/number 6,592,800 10 11 /location/country /m/06bnz 
+13	4 5 504,030 504,030 1.0 8 9 Spain /m/06mkj 1.0 19 20 France /m/0f8l9c 1.0 27 28 650 650 1.0 38 39 Switzerland /m/06mzp 1.0 	4 5 /neo/number 504,030 8 9 /location/country /m/06mkj 19 20 /location/country /m/0f8l9c 27 28 /neo/number 650 38 39 /location/country /m/06mzp 
+14	8 9 Philippines /m/05v8c 1.0 11 12 473 473 1.0 	8 9 /location/country /m/05v8c 11 12 /neo/number 473 
+15	4 5 55.6 55.6 1.0 8 9 Germany /m/0345h 1.0 14 15 79 79 1.0 20 21 14 14 1.0 	4 5 /neo/number 55.6 8 9 /location/country /m/0345h 14 15 /neo/number 79 20 21 /neo/number 14 
+16		
+17		
+18	6 7 46 46 1.0 9 10 China /m/0d05w3 1.0 12 13 88 88 1.0 16 17 US /m/09c7w0 1.0 	6 7 /neo/number 46 9 10 /location/country /m/0d05w3 12 13 /neo/number 88 16 17 /location/country /m/09c7w0 
+19		
+20	8 9 India /m/03rk0 1.0 11 12 1876.80 1876.80 1.0 13 14 US /m/09c7w0 1.0 16 17 2013 2013 1.0 	8 9 /location/country /m/03rk0 11 12 /neo/number 1876.80 13 14 /location/country /m/09c7w0 16 17 /neo/number 2013 
+21	3 4 India /m/03rk0 1.0 7 8 2007 2007 1.0 9 10 US /m/09c7w0 1.0 11 12 1.09 1.09 1.0 	3 4 /location/country /m/03rk0 7 8 /neo/number 2007 9 10 /location/country /m/09c7w0 11 12 /neo/number 1.09 
+22	1 2 USA /m/09c7w0 1.0 5 6 2012 2012 1.0 7 8 4,047.7 4,047.7 1.0 	1 2 /location/country /m/09c7w0 5 6 /neo/number 2012 7 8 /neo/number 4,047.7 
+23		
+24	9 10 2 2 1.0 16 17 USA /m/09c7w0 1.0 18 19 3992 3992 1.0 22 23 3992 3992 1.0 26 27 China /m/0d05w3 1.0 28 29 3715 3715 1.0 32 33 3715 3715 1.0 	9 10 /neo/number 2 16 17 /location/country /m/09c7w0 18 19 /neo/number 3992 22 23 /neo/number 3992 26 27 /location/country /m/0d05w3 28 29 /neo/number 3715 32 33 /neo/number 3715 
+25	4 5 India /m/03rk0 1.0 10 11 250.256 250.256 1.0 16 17 2014 2014 1.0 	4 5 /location/country /m/03rk0 10 11 /neo/number 250.256 16 17 /neo/number 2014 
+26	5 6 Russian /m/06bnz 1.0 11 12 1,038 1,038 1.0 14 15 2008 2008 1.0 16 17 930 930 1.0 19 20 2004 2004 1.0 22 23 4 4 1.0 31 32 2008 2008 1.0 	5 6 /location/country /m/06bnz 11 12 /neo/number 1,038 14 15 /neo/number 2008 16 17 /neo/number 930 19 20 /neo/number 2004 22 23 /neo/number 4 31 32 /neo/number 2008 
+27	1 2 2011 2011 1.0 8 9 996 996 1.0 13 14 Russia /m/06bnz 1.0 16 17 861 861 1.0 	1 2 /neo/number 2011 8 9 /neo/number 996 13 14 /location/country /m/06bnz 16 17 /neo/number 861 
+28	4 5 2009 2009 1.0 11 12 0.4 0.4 1.0 22 23 UK /m/07ssc 1.0 24 25 2008 2008 1.0 27 28 399.6 399.6 1.0 	4 5 /neo/number 2009 11 12 /neo/number 0.4 22 23 /location/country /m/07ssc 24 25 /neo/number 2008 27 28 /neo/number 399.6 
+29	1 2 2013 2013 1.0 2 3 Germany /m/0345h 1.0 7 8 631.4 631.4 1.0 	1 2 /neo/number 2013 2 3 /location/country /m/0345h 7 8 /neo/number 631.4 
+30	4 5 2014 2014 1.0 7 8 Australian /m/0chghy 1.0 11 12 36.25 36.25 1.0 	4 5 /neo/number 2014 7 8 /location/country /m/0chghy 11 12 /neo/number 36.25 
+31	0 1 Mongolia /m/04w8f 1.0 7 8 2007 2007 1.0 15 16 2,951,786 2,951,786 1.0 	0 1 /location/country /m/04w8f 7 8 /neo/number 2007 15 16 /neo/number 2,951,786 
+32	5 6 2014 2014 1.0 13 14 Myanmar /m/04xn_ 1.0 15 16 51,419,420 51,419,420 1.0 	5 6 /neo/number 2014 13 14 /location/country /m/04xn_ 15 16 /neo/number 51,419,420 
+33	4 5 Germany /m/0345h 1.0 8 9 2011 2011 1.0 14 15 80,219,695 80,219,695 1.0 	4 5 /location/country /m/0345h 8 9 /neo/number 2011 14 15 /neo/number 80,219,695 
+34	0 1 Germany /m/0345h 1.0 7 8 80,219,695 80,219,695 1.0 10 11 9 9 1.0 12 13 2011 2011 1.0 	0 1 /location/country /m/0345h 7 8 /neo/number 80,219,695 10 11 /neo/number 9 12 13 /neo/number 2011 
+35	0 1 Russia /m/06bnz 1.0 15 16 2014 2014 1.0 20 21 142,072,744 142,072,744 1.0 25 26 2013 2013 1.0 29 30 142,572,794 142,572,794 1.0 	0 1 /location/country /m/06bnz 15 16 /neo/number 2014 20 21 /neo/number 142,072,744 25 26 /neo/number 2013 29 30 /neo/number 142,572,794 
+36	9 10 Russia /m/06bnz 1.0 11 12 2014 2014 1.0 15 16 2010 2010 1.0 26 27 2011 2011 1.0 29 30 2012 2012 1.0 37 38 Russia /m/06bnz 1.0 39 40 142,946,800 142,946,800 1.0 	9 10 /location/country /m/06bnz 11 12 /neo/number 2014 15 16 /neo/number 2010 26 27 /neo/number 2011 29 30 /neo/number 2012 37 38 /location/country /m/06bnz 39 40 /neo/number 142,946,800 
+37	4 5 Singapore /m/06t2t 1.0 7 8 1,000 1,000 1.0 	4 5 /location/country /m/06t2t 7 8 /neo/number 1,000 
+38		
+39	1 2 1,210,193,422 1,210,193,422 1.0 6 7 2011 2011 1.0 11 12 8 8 1.0 13 14 India /m/03rk0 1.0 	1 2 /neo/number 1,210,193,422 6 7 /neo/number 2011 11 12 /neo/number 8 13 14 /location/country /m/03rk0 
+40	4 5 India /m/03rk0 1.0 7 8 00.00 00.00 1.0 12 13 2001 2001 1.0 15 16 1,028,737,436 1,028,737,436 1.0 17 18 532,223,090 532,223,090 1.0 20 21 496,514,346 496,514,346 1.0 	4 5 /location/country /m/03rk0 7 8 /neo/number 00.00 12 13 /neo/number 2001 15 16 /neo/number 1,028,737,436 17 18 /neo/number 532,223,090 20 21 /neo/number 496,514,346 
+41	1 2 1970 1970 1.0 12 13 60 60 1.0 14 15 74 74 1.0 23 24 79 79 1.0 29 30 Chile /m/01p1v 1.0 31 32 Cuba /m/0d04z6 1.0 	1 2 /neo/number 1970 12 13 /neo/number 60 14 15 /neo/number 74 23 24 /neo/number 79 29 30 /location/country /m/01p1v 31 32 /location/country /m/0d04z6 
+42	0 1 Suriname /m/06nnj 1.0 6 7 500,000 500,000 1.0 12 13 Guyana /m/034m8 1.0 14 15 French /m/0f8l9c 1.0 19 20 Brazil /m/015fr 1.0 	0 1 /location/country /m/06nnj 6 7 /neo/number 500,000 12 13 /location/country /m/034m8 14 15 /location/country /m/0f8l9c 19 20 /location/country /m/015fr 
+43	13 14 104,000 104,000 1.0 23 24 Tonga /m/07fb6 1.0 25 26 Britain /m/07ssc 1.0 	13 14 /neo/number 104,000 23 24 /location/country /m/07fb6 25 26 /location/country /m/07ssc 
+44	0 1 China /m/0d05w3 1.0 3 4 2.21 2.21 1.0 11 12 84 84 1.0 14 15 2009 2009 1.0 	0 1 /location/country /m/0d05w3 3 4 /neo/number 2.21 11 12 /neo/number 84 14 15 /neo/number 2009 
+45	0 1 Germany /m/0345h 1.0 11 12 1.516 1.516 1.0 15 16 2012 2012 1.0 	0 1 /location/country /m/0345h 11 12 /neo/number 1.516 15 16 /neo/number 2012 
+46	1 2 2004 2004 1.0 5 6 38 38 1.0 9 10 Poland /m/05qhw 1.0 	1 2 /neo/number 2004 5 6 /neo/number 38 9 10 /location/country /m/05qhw 
+47	2 3 10 10 1.0 6 7 Burundi /m/0169t 1.0 8 9 Tanzania /m/07dzf 1.0 10 11 Zambia /m/088vb 1.0 16 17 Congo /m/088xp 1.0 35 36 200,000 200,000 1.0 	2 3 /neo/number 10 6 7 /location/country /m/0169t 8 9 /location/country /m/07dzf 10 11 /location/country /m/088vb 16 17 /location/country /m/088xp 35 36 /neo/number 200,000 
+48	6 7 US /m/09c7w0 1.0 12 13 Zambia /m/088vb 1.0 17 18 1.52 1.52 1.0 19 20 2010 2010 1.0 	6 7 /location/country /m/09c7w0 12 13 /location/country /m/088vb 17 18 /neo/number 1.52 19 20 /neo/number 2010 
+49	0 1 Zimbabwe /m/088q4 1.0 7 8 47 47 1.0 10 11 15 15 1.0 21 22 47 47 1.0 24 25 Nigeria /m/05cgv 1.0 35 36 152 152 1.0 39 40 Ethiopia /m/019pcs 1.0 43 44 46 46 1.0 47 48 Liberia /m/04hzj 1.0 53 54 45 45 1.0 	0 1 /location/country /m/088q4 7 8 /neo/number 47 10 11 /neo/number 15 21 22 /neo/number 47 24 25 /location/country /m/05cgv 35 36 /neo/number 152 39 40 /location/country /m/019pcs 43 44 /neo/number 46 47 48 /location/country /m/04hzj 53 54 /neo/number 45 
+50	15 16 Zambia /m/088vb 1.0 17 18 1.48 1.48 1.0 20 21 2012 2012 1.0 	15 16 /location/country /m/088vb 17 18 /neo/number 1.48 20 21 /neo/number 2012 
+51		
+52	8 9 Brunei /m/0167v 1.0 15 16 400,000 400,000 1.0 	8 9 /location/country /m/0167v 15 16 /neo/number 400,000 
+53	14 15 Vietnam /m/01crd5 1.0 18 19 24,570 24,570 1.0 21 22 1.16 1.16 1.0 27 28 17 17 1.0 	14 15 /location/country /m/01crd5 18 19 /neo/number 24,570 21 22 /neo/number 1.16 27 28 /neo/number 17 
+54	10 11 2010 2010 1.0 12 13 Singapore /m/06t2t 1.0 17 18 77.8 77.8 1.0 	10 11 /neo/number 2010 12 13 /location/country /m/06t2t 17 18 /neo/number 77.8 
+55	4 5 India /m/03rk0 1.0 7 8 2801 2801 1.0 13 14 2014 2014 1.0 15 16 2897 2897 1.0 21 22 2014 2014 1.0 	4 5 /location/country /m/03rk0 7 8 /neo/number 2801 13 14 /neo/number 2014 15 16 /neo/number 2897 21 22 /neo/number 2014 
+56		
+57	8 9 19 19 1.0 11 12 1990 1990 1.0 18 19 China /m/0d05w3 1.0 23 24 300 300 1.0 29 30 1999 1999 1.0 	8 9 /neo/number 19 11 12 /neo/number 1990 18 19 /location/country /m/0d05w3 23 24 /neo/number 300 29 30 /neo/number 1999 
+58	16 17 Bangladesh /m/0162b 1.0 19 20 26,990,090,000 26,990,090,000 1.0 22 23 2011 2011 1.0 	16 17 /location/country /m/0162b 19 20 /neo/number 26,990,090,000 22 23 /neo/number 2011 
+59	2 3 Singapore /m/06t2t 1.0 7 8 Singapore /m/06t2t 1.0 10 11 38,000 38,000 1.0 17 18 15 15 1.0 	2 3 /location/country /m/06t2t 7 8 /location/country /m/06t2t 10 11 /neo/number 38,000 17 18 /neo/number 15 
+60		
+61	7 8 Japan /m/03_3d 1.0 15 16 86.44 86.44 1.0 29 30 79.59 79.59 1.0 	7 8 /location/country /m/03_3d 15 16 /neo/number 86.44 29 30 /neo/number 79.59 
+62	0 1 China /m/0d05w3 1.0 6 7 9.86 9.86 1.0 13 14 2012 2012 1.0 18 19 9.7 9.7 1.0 22 23 2011 2011 1.0 	0 1 /location/country /m/0d05w3 6 7 /neo/number 9.86 13 14 /neo/number 2012 18 19 /neo/number 9.7 22 23 /neo/number 2011 
+63	0 1 India /m/03rk0 1.0 2 3 Germany /m/0345h 1.0 5 6 Canada /m/0d060g 1.0 16 17 1.97 1.97 1.0 18 19 0.81 0.81 1.0 21 22 0.56 0.56 1.0 	0 1 /location/country /m/03rk0 2 3 /location/country /m/0345h 5 6 /location/country /m/0d060g 16 17 /neo/number 1.97 18 19 /neo/number 0.81 21 22 /neo/number 0.56 
+64	14 15 China /m/0d05w3 1.0 16 17 2012 2012 1.0 18 19 9.8 9.8 1.0 29 30 5.2 5.2 1.0 	14 15 /location/country /m/0d05w3 16 17 /neo/number 2012 18 19 /neo/number 9.8 29 30 /neo/number 5.2 
+65	1 2 2013 2013 1.0 5 6 Russia /m/06bnz 1.0 9 10 526.4 526.4 1.0 13 14 74.4 74.4 1.0 16 17 2009 2009 1.0 	1 2 /neo/number 2013 5 6 /location/country /m/06bnz 9 10 /neo/number 526.4 13 14 /neo/number 74.4 16 17 /neo/number 2009 
+66		
+67	0 1 Mexico /m/0b90_r 1.0 5 6 1,964,375 1,964,375 1.0 	0 1 /location/country /m/0b90_r 5 6 /neo/number 1,964,375 
+68	3 4 India /m/03rk0 1.0 6 7 3.50 3.50 1.0 11 12 2014 2014 1.0 13 14 5.68 5.68 1.0 18 19 2014 2014 1.0 	3 4 /location/country /m/03rk0 6 7 /neo/number 3.50 11 12 /neo/number 2014 13 14 /neo/number 5.68 18 19 /neo/number 2014 
+69	10 11 1.3 1.3 1.0 14 15 12 12 1.0 18 19 2014 2014 1.0 24 25 US /m/09c7w0 1.0 28 29 17 17 1.0 30 31 2014 2014 1.0 	10 11 /neo/number 1.3 14 15 /neo/number 12 18 19 /neo/number 2014 24 25 /location/country /m/09c7w0 28 29 /neo/number 17 30 31 /neo/number 2014 
+70	1 2 2014 2014 1.0 2 3 China /m/0d05w3 1.0 5 6 17.6 17.6 1.0 8 9 16.48 16.48 1.0 19 20 US /m/09c7w0 1.0 24 25 16.28 16.28 1.0 28 29 17.4 17.4 1.0 	1 2 /neo/number 2014 2 3 /location/country /m/0d05w3 5 6 /neo/number 17.6 8 9 /neo/number 16.48 19 20 /location/country /m/09c7w0 24 25 /neo/number 16.28 28 29 /neo/number 17.4 
+71	5 6 Canada /m/0d060g 1.0 12 13 77.5 77.5 1.0 15 16 74.1 74.1 1.0 23 24 81.3 81.3 1.0 26 27 79.7 79.7 1.0 	5 6 /location/country /m/0d060g 12 13 /neo/number 77.5 15 16 /neo/number 74.1 23 24 /neo/number 81.3 26 27 /neo/number 79.7 
+72	5 6 8.51 8.51 1.0 10 11 Brazil /m/015fr 1.0 17 18 200 200 1.0 24 25 6.2 6.2 1.0 28 29 100 100 1.0 	5 6 /neo/number 8.51 10 11 /location/country /m/015fr 17 18 /neo/number 200 24 25 /neo/number 6.2 28 29 /neo/number 100 
+73		
+74	4 5 2014 2014 1.0 7 8 Australian /m/0chghy 1.0 11 12 36.25 36.25 1.0 	4 5 /neo/number 2014 7 8 /location/country /m/0chghy 11 12 /neo/number 36.25 
+75	8 9 Somalia /m/06tgw 1.0 11 12 1.07 1.07 1.0 13 14 US /m/09c7w0 1.0 16 17 2010 2010 1.0 	8 9 /location/country /m/06tgw 11 12 /neo/number 1.07 13 14 /location/country /m/09c7w0 16 17 /neo/number 2010 
+76	2 3 US /m/09c7w0 1.0 9 10 54.55 54.55 1.0 17 18 77.84 77.84 1.0 19 20 France /m/0f8l9c 1.0 22 23 83.36 83.36 1.0 24 25 Germany /m/0345h 1.0 27 28 99.38 99.38 1.0 29 30 UK /m/07ssc 1.0 32 33 93.11 93.11 1.0 34 35 Italy /m/03rjj 1.0 	2 3 /location/country /m/09c7w0 9 10 /neo/number 54.55 17 18 /neo/number 77.84 19 20 /location/country /m/0f8l9c 22 23 /neo/number 83.36 24 25 /location/country /m/0345h 27 28 /neo/number 99.38 29 30 /location/country /m/07ssc 32 33 /neo/number 93.11 34 35 /location/country /m/03rjj 
+77		
+78	0 1 China /m/0d05w3 1.0 6 7 2013 2013 1.0 9 10 5322 5322 1.0 17 18 3959 3959 1.0 24 25 74 74 1.0 28 29 896 896 1.0 35 36 140 140 1.0 40 41 8.7 8.7 1.0 46 47 112 112 1.0 	0 1 /location/country /m/0d05w3 6 7 /neo/number 2013 9 10 /neo/number 5322 17 18 /neo/number 3959 24 25 /neo/number 74 28 29 /neo/number 896 35 36 /neo/number 140 40 41 /neo/number 8.7 46 47 /neo/number 112 
+79	0 1 China /m/0d05w3 1.0 15 16 30 30 1.0 20 21 384 384 1.0 	0 1 /location/country /m/0d05w3 15 16 /neo/number 30 20 21 /neo/number 384 
+80	3 4 Brazil /m/015fr 1.0 14 15 48.1 48.1 1.0 19 20 30 30 1.0 	3 4 /location/country /m/015fr 14 15 /neo/number 48.1 19 20 /neo/number 30 
+81	1 2 60 60 1.0 7 8 China /m/0d05w3 1.0 31 32 20 20 1.0 35 36 US /m/09c7w0 1.0 	1 2 /neo/number 60 7 8 /location/country /m/0d05w3 31 32 /neo/number 20 35 36 /location/country /m/09c7w0 
+82	5 6 Bangladesh /m/0162b 1.0 11 12 2.25 2.25 1.0 19 20 10.04 10.04 1.0 	5 6 /location/country /m/0162b 11 12 /neo/number 2.25 19 20 /neo/number 10.04 
+83	4 5 17.65 17.65 1.0 12 13 10 10 1.0 14 15 17.22 17.22 1.0 21 22 India /m/03rk0 1.0 28 29 India /m/03rk0 1.0 	4 5 /neo/number 17.65 12 13 /neo/number 10 14 15 /neo/number 17.22 21 22 /location/country /m/03rk0 28 29 /location/country /m/03rk0 
+84	0 1 Fiji /m/02wt0 1.0 4 5 5.1 5.1 1.0 9 10 14 14 1.0 15 16 Fiji /m/02wt0 1.0 22 23 5.1 5.1 1.0 27 28 2.2 2.2 1.0 38 39 Fiji /m/02wt0 1.0 	0 1 /location/country /m/02wt0 4 5 /neo/number 5.1 9 10 /neo/number 14 15 16 /location/country /m/02wt0 22 23 /neo/number 5.1 27 28 /neo/number 2.2 38 39 /location/country /m/02wt0 
+85	0 1 Canada /m/0d060g 1.0 7 8 1.7 1.7 1.0 11 12 12 12 1.0 21 22 1.8 1.8 1.0 24 25 1.0 1.0 1.0 	0 1 /location/country /m/0d060g 7 8 /neo/number 1.7 11 12 /neo/number 12 21 22 /neo/number 1.8 24 25 /neo/number 1.0 
+86	11 12 1.83 1.83 1.0 19 20 China /m/0d05w3 1.0 	11 12 /neo/number 1.83 19 20 /location/country /m/0d05w3 
+87	12 13 Finland /m/02vzc 1.0 15 16 70.1 70.1 1.0 23 24 2008 2008 1.0 	12 13 /location/country /m/02vzc 15 16 /neo/number 70.1 23 24 /neo/number 2008 
+88	4 5 10 10 1.0 10 11 China /m/0d05w3 1.0 	4 5 /neo/number 10 10 11 /location/country /m/0d05w3 
+89	5 6 Pakistan /m/05sb1 1.0 8 9 258.42 258.42 1.0 11 12 1991 1991 1.0 19 20 Afghanistan /m/0jdd 1.0 27 28 2007 2007 1.0 33 34 Pakistan /m/05sb1 1.0 37 38 4273 4273 1.0 41 42 Afghanistan /m/0jdd 1.0 46 47 288 288 1.0 48 49 2007 2007 1.0 	5 6 /location/country /m/05sb1 8 9 /neo/number 258.42 11 12 /neo/number 1991 19 20 /location/country /m/0jdd 27 28 /neo/number 2007 33 34 /location/country /m/05sb1 37 38 /neo/number 4273 41 42 /location/country /m/0jdd 46 47 /neo/number 288 48 49 /neo/number 2007 
+90	7 8 29 29 1.0 10 11 2,300 2,300 1.0 13 14 3,700 3,700 1.0 27 28 800,000 800,000 1.0 31 32 2 2 1.0 44 45 Mexico /m/0b90_r 1.0 	7 8 /neo/number 29 10 11 /neo/number 2,300 13 14 /neo/number 3,700 27 28 /neo/number 800,000 31 32 /neo/number 2 44 45 /location/country /m/0b90_r 
+91	5 6 Indian /m/03rk0 1.0 11 12 48.6 48.6 1.0 14 15 1970 1970 1.0 16 17 63.2 63.2 1.0 19 20 2010 2010 1.0 23 24 Indian /m/03rk0 1.0 30 31 49.1 49.1 1.0 33 34 67.5 67.5 1.0 	5 6 /location/country /m/03rk0 11 12 /neo/number 48.6 14 15 /neo/number 1970 16 17 /neo/number 63.2 19 20 /neo/number 2010 23 24 /location/country /m/03rk0 30 31 /neo/number 49.1 33 34 /neo/number 67.5 
+92	0 1 Bangladesh /m/0162b 1.0 3 4 1599.16 1599.16 1.0 12 13 2013 2013 1.0 19 20 30.71 30.71 1.0 25 26 40.61 40.61 1.0 	0 1 /location/country /m/0162b 3 4 /neo/number 1599.16 12 13 /neo/number 2013 19 20 /neo/number 30.71 25 26 /neo/number 40.61 
+93	2 3 Iceland /m/03rj0 1.0 8 9 320,000 320,000 1.0 22 23 135 135 1.0 	2 3 /location/country /m/03rj0 8 9 /neo/number 320,000 22 23 /neo/number 135 
+94	8 9 Russia /m/06bnz 1.0 16 17 60 60 1.0 	8 9 /location/country /m/06bnz 16 17 /neo/number 60 
+95	0 1 Thailand /m/07f1x 1.0 24 25 36 36 1.0 27 28 26 26 1.0 	0 1 /location/country /m/07f1x 24 25 /neo/number 36 27 28 /neo/number 26 
+96	13 14 China /m/0d05w3 1.0 16 17 384 384 1.0 22 23 28.9 28.9 1.0 	13 14 /location/country /m/0d05w3 16 17 /neo/number 384 22 23 /neo/number 28.9 
+97	5 6 Brazil /m/015fr 1.0 12 13 4 4 1.0 15 16 4.5 4.5 1.0 19 20 2009 2009 1.0 21 22 2010 2010 1.0 	5 6 /location/country /m/015fr 12 13 /neo/number 4 15 16 /neo/number 4.5 19 20 /neo/number 2009 21 22 /neo/number 2010 
+98	4 5 India /m/03rk0 1.0 12 13 9.90 9.90 1.0 26 27 2011 2011 1.0 	4 5 /location/country /m/03rk0 12 13 /neo/number 9.90 26 27 /neo/number 2011 
+99	14 15 12.9 12.9 1.0 37 38 Libya /m/04gqr 1.0 	14 15 /neo/number 12.9 37 38 /location/country /m/04gqr 
+100	1 2 India /m/03rk0 1.0 5 6 2.01 2.01 1.0 	1 2 /location/country /m/03rk0 5 6 /neo/number 2.01 
+101	6 7 1.53 1.53 1.0 17 18 Britain /m/07ssc 1.0 20 21 1.75 1.75 1.0 	6 7 /neo/number 1.53 17 18 /location/country /m/07ssc 20 21 /neo/number 1.75 
+102	3 4 Lebanon /m/04hqz 1.0 12 13 4,030 4,030 1.0 16 17 10,450 10,450 1.0 	3 4 /location/country /m/04hqz 12 13 /neo/number 4,030 16 17 /neo/number 10,450 
+103	0 1 Singapore /m/06t2t 1.0 2 3 4.8 4.8 1.0 6 7 683 683 1.0 17 18 Luxembourg /m/04g61 1.0 	0 1 /location/country /m/06t2t 2 3 /neo/number 4.8 6 7 /neo/number 683 17 18 /location/country /m/04g61 
+104	18 19 12 12 1.0 22 23 30 30 1.0 37 38 Greece /m/035qy 1.0 39 40 Benin /m/0164v 1.0 	18 19 /neo/number 12 22 23 /neo/number 30 37 38 /location/country /m/035qy 39 40 /location/country /m/0164v 
+105	0 1 Georgia /m/0d0kn 1.0 13 14 10.7 10.7 1.0 17 18 7.9 7.9 1.0 26 27 2,450 2,450 1.0 29 30 1,830 1,830 1.0 	0 1 /location/country /m/0d0kn 13 14 /neo/number 10.7 17 18 /neo/number 7.9 26 27 /neo/number 2,450 29 30 /neo/number 1,830 
+106	0 1 Chile /m/01p1v 1.0 16 17 756 756 1.0 18 19 626 626 1.0 	0 1 /location/country /m/01p1v 16 17 /neo/number 756 18 19 /neo/number 626 
+107	4 5 1.29 1.29 1.0 14 15 Peru /m/016wzw 1.0 20 21 28.22 28.22 1.0 26 27 Indian /m/03rk0 1.0 	4 5 /neo/number 1.29 14 15 /location/country /m/016wzw 20 21 /neo/number 28.22 26 27 /location/country /m/03rk0 
+108	0 1 Vietnam /m/01crd5 1.0 7 8 3.3 3.3 1.0 15 16 2100 2100 1.0 21 22 31,000 31,000 1.0 25 26 12,400 12,400 1.0 38 39 Belgium /m/0154j 1.0 	0 1 /location/country /m/01crd5 7 8 /neo/number 3.3 15 16 /neo/number 2100 21 22 /neo/number 31,000 25 26 /neo/number 12,400 38 39 /location/country /m/0154j 
+109	4 5 Norway /m/05b4w 1.0 6 7 Finland /m/02vzc 1.0 8 9 Estonia /m/02kmm 1.0 10 11 Latvia /m/04g5k 1.0 12 13 Lithuania /m/04gzd 1.0 14 15 Poland /m/05qhw 1.0 16 17 Belarus /m/0163v 1.0 18 19 Ukraine /m/07t21 1.0 20 21 Georgia /m/0d0kn 1.0 22 23 Azerbaijan /m/0jhd 1.0 24 25 Kazakhstan /m/047lj 1.0 26 27 China /m/0d05w3 1.0 28 29 Mongolia /m/04w8f 1.0 38 39 Russia /m/06bnz 1.0 45 46 17 17 1.0 	4 5 /location/country /m/05b4w 6 7 /location/country /m/02vzc 8 9 /location/country /m/02kmm 10 11 /location/country /m/04g5k 12 13 /location/country /m/04gzd 14 15 /location/country /m/05qhw 16 17 /location/country /m/0163v 18 19 /location/country /m/07t21 20 21 /location/country /m/0d0kn 22 23 /location/country /m/0jhd 24 25 /location/country /m/047lj 26 27 /location/country /m/0d05w3 28 29 /location/country /m/04w8f 38 39 /location/country /m/06bnz 45 46 /neo/number 17 
+110	6 7 88,300 88,300 1.0 10 11 Serbia /m/077qn 1.0 16 17 9.9 9.9 1.0 	6 7 /neo/number 88,300 10 11 /location/country /m/077qn 16 17 /neo/number 9.9 
+111	0 1 Portugal /m/05r4w 1.0 7 8 92,300 92,300 1.0 14 15 10.7 10.7 1.0 	0 1 /location/country /m/05r4w 7 8 /neo/number 92,300 14 15 /neo/number 10.7 
+112	6 7 2020 2020 1.0 15 16 2030 2030 1.0 22 23 25 25 1.0 28 29 Italy /m/03rjj 1.0 36 37 69 69 1.0 45 46 381 381 1.0 	6 7 /neo/number 2020 15 16 /neo/number 2030 22 23 /neo/number 25 28 29 /location/country /m/03rjj 36 37 /neo/number 69 45 46 /neo/number 381 
+113	3 4 China /m/0d05w3 1.0 9 10 10.1 10.1 1.0 12 13 2006 2006 1.0 14 15 2008 2008 1.0 20 21 300 300 1.0 33 34 750 750 1.0 	3 4 /location/country /m/0d05w3 9 10 /neo/number 10.1 12 13 /neo/number 2006 14 15 /neo/number 2008 20 21 /neo/number 300 33 34 /neo/number 750 
+114	8 9 Australia /m/0chghy 1.0 12 13 10 10 1.0 19 20 300 300 1.0 32 33 30 30 1.0 	8 9 /location/country /m/0chghy 12 13 /neo/number 10 19 20 /neo/number 300 32 33 /neo/number 30 
+115	0 1 Canada /m/0d060g 1.0 7 8 1.7 1.7 1.0 11 12 12 12 1.0 21 22 1.8 1.8 1.0 24 25 1.0 1.0 1.0 	0 1 /location/country /m/0d060g 7 8 /neo/number 1.7 11 12 /neo/number 12 21 22 /neo/number 1.8 24 25 /neo/number 1.0 
+116	3 4 Armenia /m/0jgx 1.0 9 10 1.3 1.3 1.0 18 19 5 5 1.0 24 25 Armenian /m/0jgx 1.0 	3 4 /location/country /m/0jgx 9 10 /neo/number 1.3 18 19 /neo/number 5 24 25 /location/country /m/0jgx 
+117	2 3 Fiji /m/02wt0 1.0 9 10 5.1 5.1 1.0 14 15 2.2 2.2 1.0 25 26 Fiji /m/02wt0 1.0 	2 3 /location/country /m/02wt0 9 10 /neo/number 5.1 14 15 /neo/number 2.2 25 26 /location/country /m/02wt0 
+118	14 15 China /m/0d05w3 1.0 34 35 China /m/0d05w3 1.0 40 41 2.7 2.7 1.0 49 50 1.5 1.5 1.0 	14 15 /location/country /m/0d05w3 34 35 /location/country /m/0d05w3 40 41 /neo/number 2.7 49 50 /neo/number 1.5 
+119	5 6 Brazil /m/015fr 1.0 11 12 4.31 4.31 1.0 14 15 2009 2009 1.0 	5 6 /location/country /m/015fr 11 12 /neo/number 4.31 14 15 /neo/number 2009 
+120	0 1 Turkey /m/01znc_ 1.0 14 15 6.09 6.09 1.0 20 21 2009 2009 1.0 28 29 7.5 7.5 1.0 	0 1 /location/country /m/01znc_ 14 15 /neo/number 6.09 20 21 /neo/number 2009 28 29 /neo/number 7.5 
+121	0 1 Japan /m/03_3d 1.0 5 6 8.4 8.4 1.0 18 19 2008 2008 1.0 24 25 2009 2009 1.0 	0 1 /location/country /m/03_3d 5 6 /neo/number 8.4 18 19 /neo/number 2008 24 25 /neo/number 2009 
+122	0 1 Bangladesh /m/0162b 1.0 12 13 5.39 5.39 1.0 	0 1 /location/country /m/0162b 12 13 /neo/number 5.39 
+123	0 1 India /m/03rk0 1.0 22 23 10.55 10.55 1.0 31 32 20 20 1.0 	0 1 /location/country /m/03rk0 22 23 /neo/number 10.55 31 32 /neo/number 20 
+124	0 1 Turkey /m/01znc_ 1.0 9 10 41.6 41.6 1.0 13 14 30 30 1.0 25 26 Turkish /m/01znc_ 1.0 	0 1 /location/country /m/01znc_ 9 10 /neo/number 41.6 13 14 /neo/number 30 25 26 /location/country /m/01znc_ 
+125	0 1 Finland /m/02vzc 1.0 12 13 95 95 1.0 	0 1 /location/country /m/02vzc 12 13 /neo/number 95 
+126	7 8 China /m/0d05w3 1.0 9 10 33.9 33.9 1.0 17 18 30 30 1.0 	7 8 /location/country /m/0d05w3 9 10 /neo/number 33.9 17 18 /neo/number 30 
+127	0 1 Afghanistan /m/0jdd 1.0 19 20 44 44 1.0 	0 1 /location/country /m/0jdd 19 20 /neo/number 44 
+128	0 1 Malawi /m/04tr1 1.0 16 17 60 60 1.0 24 25 40 40 1.0 	0 1 /location/country /m/04tr1 16 17 /neo/number 60 24 25 /neo/number 40 
+129	3 4 Zimbabwe /m/088q4 1.0 14 15 47 47 1.0 17 18 61 61 1.0 	3 4 /location/country /m/088q4 14 15 /neo/number 47 17 18 /neo/number 61 
+130	5 6 Greece /m/035qy 1.0 21 22 77.1 77.1 1.0 26 27 81.9 81.9 1.0 	5 6 /location/country /m/035qy 21 22 /neo/number 77.1 26 27 /neo/number 81.9 
+131	8 9 Zimbabwe /m/088q4 1.0 13 14 47 47 1.0 19 20 176 176 1.0 	8 9 /location/country /m/088q4 13 14 /neo/number 47 19 20 /neo/number 176 
+132	8 9 Russia /m/06bnz 1.0 16 17 60 60 1.0 	8 9 /location/country /m/06bnz 16 17 /neo/number 60 
+133	0 1 Nigeria /m/05cgv 1.0 2 3 2006 2006 1.0 17 18 140,431,790 140,431,790 1.0 	0 1 /location/country /m/05cgv 2 3 /neo/number 2006 17 18 /neo/number 140,431,790 
+134	0 1 Tuvalu /m/07fsv 1.0 3 4 10,000 10,000 1.0 	0 1 /location/country /m/07fsv 3 4 /neo/number 10,000 
+135	2 3 320,000 320,000 1.0 5 6 Iceland /m/03rj0 1.0 	2 3 /neo/number 320,000 5 6 /location/country /m/03rj0 
+136	3 4 Greenland /m/035v3 1.0 5 6 60,000 60,000 1.0 	3 4 /location/country /m/035v3 5 6 /neo/number 60,000 
+137	6 7 Italy /m/03rjj 1.0 16 17 0.07 0.07 1.0 19 20 60,088,880 60,088,880 1.0 	6 7 /location/country /m/03rjj 16 17 /neo/number 0.07 19 20 /neo/number 60,088,880 
+138	2 3 Pakistani /m/05sb1 1.0 14 15 800,000 800,000 1.0 18 19 308,880 308,880 1.0 24 25 167 167 1.0 	2 3 /location/country /m/05sb1 14 15 /neo/number 800,000 18 19 /neo/number 308,880 24 25 /neo/number 167 
+139	6 7 700 700 1.0 10 11 280 280 1.0 15 16 Singapore /m/06t2t 1.0 	6 7 /neo/number 700 10 11 /neo/number 280 15 16 /location/country /m/06t2t 
+140	1 2 60 60 1.0 4 5 Malaysia /m/09pmkv 1.0 6 7 28 28 1.0 18 19 Chinese /m/0d05w3 1.0 	1 2 /neo/number 60 4 5 /location/country /m/09pmkv 6 7 /neo/number 28 18 19 /location/country /m/0d05w3 
+141	5 6 Nigeria /m/05cgv 1.0 13 14 150 150 1.0 	5 6 /location/country /m/05cgv 13 14 /neo/number 150 
+142	0 1 Latvia /m/04g5k 1.0 5 6 2.3 2.3 1.0 13 14 2004 2004 1.0 	0 1 /location/country /m/04g5k 5 6 /neo/number 2.3 13 14 /neo/number 2004 
+143	0 1 China /m/0d05w3 1.0 7 8 1.3 1.3 1.0 	0 1 /location/country /m/0d05w3 7 8 /neo/number 1.3 
+144	23 24 Nigeria /m/05cgv 1.0 26 27 150 150 1.0 	23 24 /location/country /m/05cgv 26 27 /neo/number 150 
+145	5 6 Sudan /m/06tw8 1.0 7 8 18.5 18.5 1.0 15 16 16 16 1.0 19 20 6 6 1.0 38 39 Sudan /m/06tw8 1.0 43 44 39 39 1.0 	5 6 /location/country /m/06tw8 7 8 /neo/number 18.5 15 16 /neo/number 16 19 20 /neo/number 6 38 39 /location/country /m/06tw8 43 44 /neo/number 39 
+146	2 3 Myanmar /m/04xn_ 1.0 6 7 12 12 1.0 10 11 7.6 7.6 1.0 18 19 6.78 6.78 1.0 	2 3 /location/country /m/04xn_ 6 7 /neo/number 12 10 11 /neo/number 7.6 18 19 /neo/number 6.78 
+147	0 1 Pakistan /m/05sb1 1.0 5 6 10 10 1.0 	0 1 /location/country /m/05sb1 5 6 /neo/number 10 
+148	0 1 Pakistan /m/05sb1 1.0 5 6 10 10 1.0 	0 1 /location/country /m/05sb1 5 6 /neo/number 10 
+149	0 1 Georgia /m/0d0kn 1.0 13 14 10.7 10.7 1.0 17 18 7.9 7.9 1.0 26 27 2,450 2,450 1.0 29 30 1,830 1,830 1.0 	0 1 /location/country /m/0d0kn 13 14 /neo/number 10.7 17 18 /neo/number 7.9 26 27 /neo/number 2,450 29 30 /neo/number 1,830 
+150	4 5 Haiti /m/03gyl 1.0 19 20 513 513 1.0 	4 5 /location/country /m/03gyl 19 20 /neo/number 513 
+151	0 1 40,000 40,000 1.0 22 23 Kiribati /m/047t_ 1.0 	0 1 /neo/number 40,000 22 23 /location/country /m/047t_ 
+152	7 8 1.25 1.25 1.0 11 12 1994 1994 1.0 13 14 1.90 1.90 1.0 17 18 2007 2007 1.0 20 21 India /m/03rk0 1.0 	7 8 /neo/number 1.25 11 12 /neo/number 1994 13 14 /neo/number 1.90 17 18 /neo/number 2007 20 21 /location/country /m/03rk0 
+153	2 3 China /m/0d05w3 1.0 18 19 Japan /m/03_3d 1.0 25 26 7.8 7.8 1.0 32 33 2050 2050 1.0 39 40 17 17 1.0 	2 3 /location/country /m/0d05w3 18 19 /location/country /m/03_3d 25 26 /neo/number 7.8 32 33 /neo/number 2050 39 40 /neo/number 17 
+154	12 13 Finland /m/02vzc 1.0 15 16 70.1 70.1 1.0 23 24 2008 2008 1.0 	12 13 /location/country /m/02vzc 15 16 /neo/number 70.1 23 24 /neo/number 2008 
+155	6 7 8,514,215 8,514,215 1.0 10 11 3,287,357 3,287,357 1.0 15 16 Brazil /m/015fr 1.0 19 20 Australia /m/0chghy 1.0 	6 7 /neo/number 8,514,215 10 11 /neo/number 3,287,357 15 16 /location/country /m/015fr 19 20 /location/country /m/0chghy 
+156	0 1 Brazil /m/015fr 1.0 2 3 36.4 36.4 1.0 16 17 20 20 1.0 27 28 Brazil /m/015fr 1.0 30 31 36.4 36.4 1.0 36 37 10 10 1.0 	0 1 /location/country /m/015fr 2 3 /neo/number 36.4 16 17 /neo/number 20 27 28 /location/country /m/015fr 30 31 /neo/number 36.4 36 37 /neo/number 10 
+157	0 1 Greece /m/035qy 1.0 6 7 132,000 132,000 1.0 13 14 11.31 11.31 1.0 18 19 98 98 1.0 	0 1 /location/country /m/035qy 6 7 /neo/number 132,000 13 14 /neo/number 11.31 18 19 /neo/number 98 
+158	3 4 Brazil /m/015fr 1.0 14 15 48.1 48.1 1.0 19 20 30 30 1.0 	3 4 /location/country /m/015fr 14 15 /neo/number 48.1 19 20 /neo/number 30 
+159	24 25 3 3 1.0 28 29 Bulgaria /m/015qh 1.0 	24 25 /neo/number 3 28 29 /location/country /m/015qh 
+160	7 8 93 93 1.0 10 11 US /m/09c7w0 1.0 21 22 30 30 1.0 	7 8 /neo/number 93 10 11 /location/country /m/09c7w0 21 22 /neo/number 30 
+161	0 1 Indonesian /m/03ryn 1.0 5 6 17 17 1.0 8 9 2.3 2.3 1.0 	0 1 /location/country /m/03ryn 5 6 /neo/number 17 8 9 /neo/number 2.3 
+162	13 14 China /m/0d05w3 1.0 16 17 384 384 1.0 22 23 28.9 28.9 1.0 	13 14 /location/country /m/0d05w3 16 17 /neo/number 384 22 23 /neo/number 28.9 
+163	2 3 2010 2010 1.0 4 5 China /m/0d05w3 1.0 6 7 440 440 1.0 12 13 33 33 1.0 29 30 China /m/0d05w3 1.0 	2 3 /neo/number 2010 4 5 /location/country /m/0d05w3 6 7 /neo/number 440 12 13 /neo/number 33 29 30 /location/country /m/0d05w3 
+164	7 8 Brazil /m/015fr 1.0 10 11 36.4 36.4 1.0 16 17 10 10 1.0 	7 8 /location/country /m/015fr 10 11 /neo/number 36.4 16 17 /neo/number 10 
+165	10 11 2010 2010 1.0 12 13 Singapore /m/06t2t 1.0 17 18 77.8 77.8 1.0 	10 11 /neo/number 2010 12 13 /location/country /m/06t2t 17 18 /neo/number 77.8 
+166	0 1 Afghanistan /m/0jdd 1.0 19 20 44 44 1.0 	0 1 /location/country /m/0jdd 19 20 /neo/number 44 
+167	5 6 Greece /m/035qy 1.0 21 22 77.1 77.1 1.0 26 27 81.9 81.9 1.0 	5 6 /location/country /m/035qy 21 22 /neo/number 77.1 26 27 /neo/number 81.9 
+168	6 7 88,300 88,300 1.0 10 11 Serbia /m/077qn 1.0 16 17 9.9 9.9 1.0 	6 7 /neo/number 88,300 10 11 /location/country /m/077qn 16 17 /neo/number 9.9 
+169	0 1 Cuba /m/0d04z6 1.0 6 7 4.9 4.9 1.0 14 15 77 77 1.0 23 24 5.8 5.8 1.0 25 26 1,000 1,000 1.0 	0 1 /location/country /m/0d04z6 6 7 /neo/number 4.9 14 15 /neo/number 77 23 24 /neo/number 5.8 25 26 /neo/number 1,000 
+170	0 1 Sweden /m/0d0vqn 1.0 6 7 449,964 449,964 1.0 	0 1 /location/country /m/0d0vqn 6 7 /neo/number 449,964 
+171	8 9 Zimbabwe /m/088q4 1.0 13 14 47 47 1.0 19 20 176 176 1.0 	8 9 /location/country /m/088q4 13 14 /neo/number 47 19 20 /neo/number 176 
+172	11 12 Liechtenstein /m/04j53 1.0 15 16 81,011 81,011 1.0 18 19 Japan /m/03_3d 1.0 23 24 83.6 83.6 1.0 27 28 Norway /m/05b4w 1.0 	11 12 /location/country /m/04j53 15 16 /neo/number 81,011 18 19 /location/country /m/03_3d 23 24 /neo/number 83.6 27 28 /location/country /m/05b4w 
+173	0 1 Togo /m/07f5x 1.0 5 6 6.5 6.5 1.0 11 12 22,000 22,000 1.0 	0 1 /location/country /m/07f5x 5 6 /neo/number 6.5 11 12 /neo/number 22,000 
+174	1 2 Lanka /m/06m_5 1.0 7 8 65,000 65,000 1.0 11 12 25,000 25,000 1.0 	1 2 /location/country /m/06m_5 7 8 /neo/number 65,000 11 12 /neo/number 25,000 
+175	3 4 Zimbabwe /m/088q4 1.0 14 15 47 47 1.0 17 18 61 61 1.0 	3 4 /location/country /m/088q4 14 15 /neo/number 47 17 18 /neo/number 61 
+176	5 6 Guinea-Bissau /m/036b_ 1.0 8 9 46 46 1.0 	5 6 /location/country /m/036b_ 8 9 /neo/number 46 
+177	0 1 Japan /m/03_3d 1.0 10 11 83 83 1.0 	0 1 /location/country /m/03_3d 10 11 /neo/number 83 
+178	0 1 Indian /m/03rk0 1.0 7 8 8.51 8.51 1.0 12 13 9.78 9.78 1.0 	0 1 /location/country /m/03rk0 7 8 /neo/number 8.51 12 13 /neo/number 9.78 
+179	0 1 Israel /m/03spz 1.0 7 8 7.6 7.6 1.0 12 13 5.8 5.8 1.0 21 22 300,000 300,000 1.0 27 28 1.6 1.6 1.0 	0 1 /location/country /m/03spz 7 8 /neo/number 7.6 12 13 /neo/number 5.8 21 22 /neo/number 300,000 27 28 /neo/number 1.6 
+180	0 1 China /m/0d05w3 1.0 13 14 700 700 1.0 	0 1 /location/country /m/0d05w3 13 14 /neo/number 700 
+181	0 1 Spain /m/06mkj 1.0 8 9 47 47 1.0 13 14 5.7 5.7 1.0 20 21 Romania /m/06c1y 1.0 22 23 Morocco /m/04wgh 1.0 24 25 Ecuador /m/02k1b 1.0 26 27 Britain /m/07ssc 1.0 	0 1 /location/country /m/06mkj 8 9 /neo/number 47 13 14 /neo/number 5.7 20 21 /location/country /m/06c1y 22 23 /location/country /m/04wgh 24 25 /location/country /m/02k1b 26 27 /location/country /m/07ssc 
+182	10 11 India /m/03rk0 1.0 24 25 70 70 1.0 29 30 1.2 1.2 1.0 	10 11 /location/country /m/03rk0 24 25 /neo/number 70 29 30 /neo/number 1.2 
+183	8 9 Spain /m/06mkj 1.0 12 13 47 47 1.0 	8 9 /location/country /m/06mkj 12 13 /neo/number 47 
+184	8 9 Hungary /m/03gj2 1.0 10 11 10 10 1.0 	8 9 /location/country /m/03gj2 10 11 /neo/number 10 
+185	2 3 124 124 1.0 7 8 Brazil /m/015fr 1.0 14 15 190 190 1.0 	2 3 /neo/number 124 7 8 /location/country /m/015fr 14 15 /neo/number 190 
+186	10 11 China /m/0d05w3 1.0 19 20 1.3 1.3 1.0 	10 11 /location/country /m/0d05w3 19 20 /neo/number 1.3 
+187	7 8 190 190 1.0 11 12 Brazil /m/015fr 1.0 15 16 2,300 2,300 1.0 19 20 93 93 1.0 	7 8 /neo/number 190 11 12 /location/country /m/015fr 15 16 /neo/number 2,300 19 20 /neo/number 93 
+188	4 5 20 20 1.0 7 8 Pakistan /m/05sb1 1.0 14 15 167 167 1.0 	4 5 /neo/number 20 7 8 /location/country /m/05sb1 14 15 /neo/number 167 
+189	13 14 Bangladesh /m/0162b 1.0 25 26 40 40 1.0 29 30 144 144 1.0 	13 14 /location/country /m/0162b 25 26 /neo/number 40 29 30 /neo/number 144 
+190	5 6 China /m/0d05w3 1.0 11 12 2.7 2.7 1.0 16 17 1.5 1.5 1.0 	5 6 /location/country /m/0d05w3 11 12 /neo/number 2.7 16 17 /neo/number 1.5 
+191	7 8 Kenya /m/019rg5 1.0 14 15 18.4 18.4 1.0 17 18 17.8 17.8 1.0 	7 8 /location/country /m/019rg5 14 15 /neo/number 18.4 17 18 /neo/number 17.8 
+192	0 1 Britain /m/07ssc 1.0 6 7 1.8 1.8 1.0 27 28 England /m/02jx1 1.0 29 30 2 2 1.0 	0 1 /location/country /m/07ssc 6 7 /neo/number 1.8 27 28 /location/country /m/02jx1 29 30 /neo/number 2 
+193	0 1 Turkey /m/01znc_ 1.0 16 17 5.73 5.73 1.0 	0 1 /location/country /m/01znc_ 16 17 /neo/number 5.73 
+194	0 1 Indian /m/03rk0 1.0 7 8 8.51 8.51 1.0 12 13 9.78 9.78 1.0 	0 1 /location/country /m/03rk0 7 8 /neo/number 8.51 12 13 /neo/number 9.78 
+195	9 10 Britain /m/07ssc 1.0 14 15 3.1 3.1 1.0 31 32 2 2 1.0 	9 10 /location/country /m/07ssc 14 15 /neo/number 3.1 31 32 /neo/number 2 
+196	4 5 Malaysia /m/09pmkv 1.0 18 19 1.8 1.8 1.0 30 31 2011 2011 1.0 	4 5 /location/country /m/09pmkv 18 19 /neo/number 1.8 30 31 /neo/number 2011 
+197	6 7 Austria /m/0h7x 1.0 21 22 1.8 1.8 1.0 24 25 2 2 1.0 	6 7 /location/country /m/0h7x 21 22 /neo/number 1.8 24 25 /neo/number 2 
+198	8 9 Bangladesh /m/0162b 1.0 17 18 7.18 7.18 1.0 28 29 12.28 12.28 1.0 	8 9 /location/country /m/0162b 17 18 /neo/number 7.18 28 29 /neo/number 12.28 
+199	5 6 Brazil /m/015fr 1.0 14 15 4.5 4.5 1.0 21 22 2012 2012 1.0 	5 6 /location/country /m/015fr 14 15 /neo/number 4.5 21 22 /neo/number 2012 
+200	6 7 Jordan /m/03__y 1.0 21 22 5.1 5.1 1.0 	6 7 /location/country /m/03__y 21 22 /neo/number 5.1 
+201	6 7 India /m/03rk0 1.0 20 21 8.51 8.51 1.0 	6 7 /location/country /m/03rk0 20 21 /neo/number 8.51 
+202	13 14 Lithuania /m/04gzd 1.0 22 23 7.9 7.9 1.0 27 28 8.7 8.7 1.0 32 33 9.4 9.4 1.0 	13 14 /location/country /m/04gzd 22 23 /neo/number 7.9 27 28 /neo/number 8.7 32 33 /neo/number 9.4 
+203	3 4 Azerbaijan /m/0jhd 1.0 10 11 2008 2008 1.0 16 17 16.70 16.70 1.0 19 20 2009 2009 1.0 21 22 20.80 20.80 1.0 	3 4 /location/country /m/0jhd 10 11 /neo/number 2008 16 17 /neo/number 16.70 19 20 /neo/number 2009 21 22 /neo/number 20.80 
+204	4 5 Britain /m/07ssc 1.0 8 9 2.9 2.9 1.0 	4 5 /location/country /m/07ssc 8 9 /neo/number 2.9 
+205	14 15 15.1 15.1 1.0 19 20 2010 2010 1.0 30 31 Malaysia /m/09pmkv 1.0 36 37 2.2 2.2 1.0 41 42 2010 2010 1.0 	14 15 /neo/number 15.1 19 20 /neo/number 2010 30 31 /location/country /m/09pmkv 36 37 /neo/number 2.2 41 42 /neo/number 2010 
+206	5 6 Uganda /m/07tp2 1.0 16 17 20 20 1.0 22 23 9.4 9.4 1.0 29 30 2008 2008 1.0 	5 6 /location/country /m/07tp2 16 17 /neo/number 20 22 23 /neo/number 9.4 29 30 /neo/number 2008 
