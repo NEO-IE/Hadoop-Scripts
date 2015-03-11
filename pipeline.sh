@@ -33,6 +33,7 @@ MARKER_OUTFILE=$FLATFILE"MARKEROUT" #marker output
 COMB_INCORRECT_ORDER="$FLATFILE"MERGE   #merged file 
 COMB_CORRECT_ORDER="$FLATFILE"RES   #merged file with columns in correct order
 ####################################################
+RUNSCRIPTPATH=runScripts
 
 echo "Processing $FLATFILE"
 
@@ -50,7 +51,7 @@ echo -e "######################\n\n"
 echo "Starting input preprocessing"
 hadoop fs -copyFromLocal $DOCIDFILE $DOCIDFILE
 rm $DOCIDFILE
-bash runMultirPreprocess.sh $DOCIDFILE $PPOUTPUT $PP_MAPPER $PP_REDUCER #add metadata required by stages ahead
+bash $RUNSCRIPTPATH/runMultirPreprocess.sh $DOCIDFILE $PPOUTPUT $PP_MAPPER $PP_REDUCER #add metadata required by stages ahead
 echo "input preprocessing finished, copying files to disk, sorting and assigning sentence ids"
 hadoop fs -getmerge $PPOUTPUT $PPOUTPUT
 hadoop fs -rmr $PPOUTPUT
@@ -68,7 +69,7 @@ echo -e "Starting preparse processing, file: $PREPARSEINPUT"
 echo "Copying file to HDFS"
 hadoop fs -copyFromLocal $PREPARSEINPUT $PREPARSEINPUT
 echo "Spawing the job"
-bash runpre.sh  $PREPARSEINPUT $PREPARSEOUTPUT $PREPARSE_MAPPER_COUNT $PREPARSE_REDUCER_COUNT
+bash $RUNSCRIPTPATH/runpre.sh  $PREPARSEINPUT $PREPARSEOUTPUT $PREPARSE_MAPPER_COUNT $PREPARSE_REDUCER_COUNT
 echo "Copying results to disk, cleaning HDFS"
 hadoop fs -rmr $PREPARSEINPUT
 hadoop fs -getmerge $PREPARSEOUTPUT $PREPARSEOUTPUT
@@ -89,7 +90,7 @@ hadoop fs -getmerge $PARSEOUT $PARSEOUT
 echo -e "\n\n######################"
 echo "Step 5: Run Post Parse Processing (Dependency parsing: possibly slow, some tasks will fail, that's okay)"
 echo -e "######################\n\n"
-bash runPost.sh $PARSEOUT $DEPPARSEOUT $DEPPARSE_MAPPER_COUNT
+bash $RUNSCRIPTPATH/runPost.sh $PARSEOUT $DEPPARSEOUT $DEPPARSE_MAPPER_COUNT
 echo "finished"
 hadoop fs -getmerge $DEPPARSEOUT $DEPPARSEOUT
 hadoop fs -rmr $DEPPARSEOUT
@@ -105,7 +106,7 @@ join $PREPARSEINPUT $PREPARSEOUTPUT -t $'\t'|cut -f1,3,4,7 > $CHUNKERINFILE
 echo "Copying the input file to HDFS"
 hadoop fs -copyFromLocal $CHUNKERINFILE $CHUNKERINFILE
 echo "Spawning the chunker"
-bash runChunker.sh $CHUNKERINFILE $CHUNKEROUTFILE $CHUNKERMAPPER_COUNT
+bash $RUNSCRIPTPATH/runChunker.sh $CHUNKERINFILE $CHUNKEROUTFILE $CHUNKERMAPPER_COUNT
 echo "Chunking over, cleaning up, copying files from HDFS"
 hadoop fs -rmr $CHUNKERINFILE
 hadoop fs -getmerge $CHUNKEROUTFILE $CHUNKEROUTFILE
@@ -114,7 +115,7 @@ echo -e "\n\n######################"
 echo "Step 7: Run (country) Marker (make sure you apply your correct marker for this step)"
 echo -e "######################\n\n"
 echo "Spawning Marker"
-bash runMarker.sh $MARKER_INFILE $MARKER_OUTFILE $MARKER_MAPPER_COUNT
+bash $RUNSCRIPTPATH/runMarker.sh $MARKER_INFILE $MARKER_OUTFILE $MARKER_MAPPER_COUNT
 hadoop fs -getmerge $MARKER_OUTFILE $MARKER_OUTFILE
 echo "Marking over, getting data back to the disk"
 
