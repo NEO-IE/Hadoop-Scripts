@@ -30,106 +30,98 @@ import edu.stanford.nlp.trees.TreebankLanguagePack;
 import edu.stanford.nlp.trees.TypedDependency;
 
 public class PostParseProcessor implements Tool {
-	
+
 	private Configuration configuration;
-	
-	public PostParseProcessor(){
+
+	public PostParseProcessor() {
 		configuration = new Configuration();
 		setConf(configuration);
 	}
-	
-	
+
 	private static final TreebankLanguagePack tlp = new PennTreebankLanguagePack();
 	private static final GrammaticalStructureFactory gsf = tlp.grammaticalStructureFactory();
-	
-	public static class Map extends MapReduceBase implements Mapper<LongWritable,Text,Integer,Text> {	
+
+	public static class Map extends MapReduceBase implements Mapper<LongWritable, Text, Integer, Text> {
 		@Override
-		public void map(LongWritable key, Text value,
-				OutputCollector<Integer, Text> output, Reporter reporter)
+		public void map(LongWritable key, Text value, OutputCollector<Integer, Text> output, Reporter reporter)
 				throws IOException {
-			
+
 			String[] values = value.toString().split("\t");
-			
-            //System.out.println(values.length + " 0 : " + values[0] + " 1: " + values[1]);
+
+			try
+			{
+			// System.out.println(values.length + " 0 : " + values[0] + " 1: " +
+			// values[1]);
 			Integer sentId = Integer.parseInt(values[0]);
-			if(values.length > 1){
-				String parseString = values[1];	
-				
+			if (values.length > 1) {
+				String parseString = values[1];
+
 				// we don't allow | since we treat that as a special character
 				parseString = parseString.replace("|", " ");
-				
+
 				Tree parse = Tree.valueOf(parseString);
 				GrammaticalStructure gs = gsf.newGrammaticalStructure(parse);
 				Collection<TypedDependency> tdl = null;
 				try {
-					tdl = gs.allTypedDependencies(); 
+					tdl = gs.allTypedDependencies();
 				} catch (NullPointerException e) {
-					// there has to be a bug in EnglishGrammaticalStructure.collapseFlatMWP
+					// there has to be a bug in
+					// EnglishGrammaticalStructure.collapseFlatMWP
 					tdl = new ArrayList<TypedDependency>();
 				}
-				
+
 				StringBuilder sb = new StringBuilder();
 				List<TypedDependency> l = new ArrayList<TypedDependency>();
 				l.addAll(tdl);
-				for (int j=0; j < tdl.size(); j++) {
+				for (int j = 0; j < tdl.size(); j++) {
 					TypedDependency td = l.get(j);
 					String name = td.reln().getShortName();
 					if (td.reln().getSpecific() != null)
-						name += "-" + td.reln().getSpecific();				
+						name += "-" + td.reln().getSpecific();
 					sb.append((td.gov().index()) + " ");
 					sb.append(name + " ");
 					sb.append((td.dep().index()));
-					if (j < tdl.size()-1)
+					if (j < tdl.size() - 1)
 						sb.append("|");
 				}
-				
+
 				output.collect(sentId, new Text(sb.toString()));
+			} else {
+				output.collect(sentId, new Text(""));
 			}
-			else{
-				output.collect(sentId,new Text(""));
+			} catch(Exception e) {
+				
 			}
+			
 		}
 	}
-	
-	
-	
-	
-	public static void main(String[] args) throws Exception{
+
+	public static void main(String[] args) throws Exception {
 		int res = ToolRunner.run(new PostParseProcessor(), args);
 	}
-
-
-
 
 	@Override
 	public Configuration getConf() {
 		return configuration;
 	}
 
-
-
-
 	@Override
 	public void setConf(Configuration arg0) {
 		configuration = arg0;
 	}
 
-
-
-
 	@Override
 	public int run(String[] args) throws Exception {
-		
+
 		Configuration conf = getConf();
-        long timeOut = 0;
-        conf.setLong("mapred.task.timeout", timeOut);
-		JobConf job = new JobConf(conf,PostParseProcessor.class);
-		
-		
-		//process command line options
+		long timeOut = 0;
+		conf.setLong("mapred.task.timeout", timeOut);
+		JobConf job = new JobConf(conf, PostParseProcessor.class);
+
+		// process command line options
 		Path in = new Path(args[0]);
 		Path out = new Path(args[1]);
-		
+
 		job.setJobName("postparseprocessor");
 		job.setOutputKeyClass(Integer.class);
 		job.setOutputValueClass(Text.class);
@@ -140,7 +132,7 @@ public class PostParseProcessor implements Tool {
 		FileOutputFormat.setOutputPath(job, out);
 		job.setNumReduceTasks(0);
 		job.setNumMapTasks(Integer.parseInt(args[2]));
-		
+
 		JobClient.runJob(job);
 		return 0;
 	}
