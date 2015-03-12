@@ -133,10 +133,12 @@ public class HadoopCountryMarker implements Tool {
 						new Text(markingStrings.get(MarkingUtils.LINKOFFSET)
 								+ "\t"
 								+ markingStrings.get(MarkingUtils.TYPEOFFSET)));
-				System.out.println(sentId
-						+ markingStrings.get(MarkingUtils.LINKOFFSET) + "\t"
-						+ markingStrings.get(MarkingUtils.TYPEOFFSET));
-			}
+			} else {
+	            collector.collect(
+						sentId,
+						new Text("" + "\t" + ""));
+
+            }
 			// System.out.println(docName + "\t" + key.toString() + "\t" +
 			// tokenString);
 		}
