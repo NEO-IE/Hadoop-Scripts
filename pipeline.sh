@@ -1,10 +1,13 @@
-#the multir preprocessing pipeline
+#the preprocessing pipeline
+#Includes: POS Tagger, NER, Chunker, Parser, Country Recognizer
 
 ####################################################
+#Defines the number of lines that should be collected in one document
+LINES_PER_DOC=1000
 #Define the number of mappers/reducers for different
 #steps of the pipeline
-MAPPER_STD=10
-RED_STD=40
+MAPPER_STD=1000
+RED_STD=400
 PP_MAPPER=$MAPPER_STD
 PP_REDUCER=$RED_STD
 
@@ -19,7 +22,7 @@ MARKER_MAPPER_COUNT=$MAPPER_STD
 ####################################################
 #Define the files to be used
 FLATFILE=$1 #the initial flatfile
-DOCIDFILE=$FLATFILE"IDS" #flat file with doc ids
+DOCIDFILE=$FLATFILE"_IDS" #flat file with doc ids
 PPOUTPUT=$FLATFILE"_PPED"   #preprocessing input
 PREPARSEINPUT="$FLATFILE"_PPIN  #preparse processing input
 PREPARSEOUTPUT="$FLATFILE"_PPOUT    #preparse processing output
@@ -40,16 +43,14 @@ echo "######################"
 echo "Step1: Assign doc ids"
 echo "######################"
 
-LINES_PER_DOC=100
-python assignDocIds.py "$FLATFILE" "$LINES_PER_DOC" > "$DOCIDFILE" #add document id to each line
 echo -e "Assigning document ids to sentences, $LINES_PER_DOC sentences per doc\n\n"
+python assignDocIds.py "$FLATFILE" "$LINES_PER_DOC" > "$DOCIDFILE" #add document id to each line
 
 echo "######################"
 echo "Step2: feed to the multir preprocessor"
 echo -e "######################\n\n"
 echo "Starting input preprocessing"
 hadoop fs -copyFromLocal $DOCIDFILE $DOCIDFILE
-rm $DOCIDFILE
 bash runMultirPreprocess.sh $DOCIDFILE $PPOUTPUT $PP_MAPPER $PP_REDUCER #add metadata required by stages ahead
 echo "input preprocessing finished, copying files to disk, sorting and assigning sentence ids"
 hadoop fs -getmerge $PPOUTPUT $PPOUTPUT
@@ -58,7 +59,7 @@ sed -i '/^\s*$/d' $PPOUTPUT
 python assignsentids.py $PPOUTPUT > $PREPARSEINPUT  #assign a sentence id to each sentence
 echo "Preparse input file created"
 
-rm $PPOUTPUT $FLATFILEIDS
+#rm $PPOUTPUT $FLATFILEIDS
 
 echo -e "\n\n######################"
 echo "Step 3: Run Preparse processing"
